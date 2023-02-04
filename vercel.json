@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:url*",
+      "destination": "${{ process.env.VITE_API_URL }}/:url*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
