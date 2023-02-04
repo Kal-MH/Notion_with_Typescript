@@ -39,6 +39,7 @@ const getDefaultInstance = (method: Method) => {
     baseURL: API_BASE_URL,
     headers: {
       Authorization: API_AUTH_TOKEN && `Bearer ${API_AUTH_TOKEN}`,
+      'Content-Type': 'application/json',
     },
     method,
   });
