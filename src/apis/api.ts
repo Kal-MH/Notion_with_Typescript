@@ -1,6 +1,9 @@
 import axios, { AxiosRequestConfig, Method } from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL =
+  import.meta.env.MODE === 'development'
+    ? import.meta.env.VITE_API_URL
+    : '/api';
 const API_AUTH_TOKEN = import.meta.env.VITE_AUTH_TOKEN;
 
 const METHOD: Record<string, Method> = {
