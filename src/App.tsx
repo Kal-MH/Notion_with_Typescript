@@ -10,11 +10,7 @@ function App() {
   };
 
   showUserListAndIsAuth();
-  return (
-    <div className='App'>
-      <button>hello </button>
-    </div>
-  );
+  return <div className='App'></div>;
 }
 
 export default App;
